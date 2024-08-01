@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: "Quicksand", sans-serif;
+}
+
+/* Light Theme Styles */
+.bg-light {
+    background-color: white; /* Background color for light theme */
+}
+
+.text-light-neutral-300 {
+    color: #2d2d2d; /* Darker text color for better visibility on light backgrounds */
+}
+
+.text-light-neutral-400 {
+    color: #4a4a4a; /* Slightly darker shade for better contrast */
+}
+
+.text-light-purple-100 {
+    color: #5b2d60; /* Darker purple shade for better visibility */
+}
+
+.text-light-purple-300 {
+    color: #3f1d40; /* Adjusted darker purple shade */
+}
+
+.text-light-purple-500 {
+    color: #3f1d40; /* Adjusted darker purple shade */
+}
+
+/* Dark Theme Styles */
+.dark .bg-light {
+    background-color: #121212; /* Background color for dark theme */
+}
+
+.dark body {
+    background-color: #121212; /* Body background color for dark theme */
+    color: #e0e0e0; /* Default text color for dark theme */
+}
+
+.dark .bg-neutral-950 {
+    background-color: #1f1f1f; /* Background color for dark theme */
+}
+
+.dark .text-white {
+    color: #e0e0e0; /* Text color for dark theme */
+}
+
+.dark .text-black {
+    color: #e0e0e0; /* Adjusted text color for dark theme to ensure contrast */
+}
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    font-family: "Quicksand", sans-serif;
+}
+
+/* Light Theme Styles */
+.bg-light {
+    background-color: white; /* Background color for light theme */
+}
+
+.text-light-neutral-300 {
+    color: #2d2d2d; /* Darker text color for better visibility on light backgrounds */
+}
+
+.text-light-neutral-400 {
+    color: #4a4a4a; /* Slightly darker shade for better contrast */
+}
+
+.text-light-purple-100 {
+    color: #5b2d60; /* Darker purple shade for better visibility */
+}
+
+.text-light-purple-300 {
+    color: #3f1d40; /* Adjusted darker purple shade */
+}
+
+.text-light-purple-500 {
+    color: #3f1d40; /* Adjusted darker purple shade */
+}
+
+/* Dark Theme Styles */
+.dark .bg-light {
+    background-color: #121212; /* Background color for dark theme */
+}
+
+.dark body {
+    background-color: #121212; /* Body background color for dark theme */
+    color: #e0e0e0; /* Default text color for dark theme */
+}
+
+.dark .bg-neutral-950 {
+    background-color: #1f1f1f; /* Background color for dark theme */
+}
+
+.dark .text-white {
+    color: #e0e0e0; /* Text color for dark theme */
+}
+
+.dark .text-black {
+    color: #e0e0e0; /* Adjusted text color for dark theme to ensure contrast */
+}
