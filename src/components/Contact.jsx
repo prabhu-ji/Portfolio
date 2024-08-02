@@ -14,7 +14,7 @@ const contactVariants = {
 
 const Contact = () => {
   return (
-    <div className="border-b border-neutral-900 pb-8">
+    <div className="border-b border-neutral-900 pb-8 px-4">
       <motion.h1
         variants={headingVariants}
         initial="hidden"
@@ -25,7 +25,7 @@ const Contact = () => {
         Get in Touch!
       </motion.h1>
       <div className="flex flex-col items-center">
-        <div className="flex flex-row items-center justify-center space-x-4 my-4">
+        <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4 my-4">
           <motion.div
             variants={contactVariants}
             initial="hidden"
