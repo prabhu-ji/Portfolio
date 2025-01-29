@@ -30,7 +30,7 @@ export const EXPERIENCES = [
     technologies: ["Javascript", "React.js + Vite", "Node.js", "Express", "MongoDB"],
   },
   {
-    year: "Present",
+    year: "Jan 2025 - Present",
     role: "Product Development Intern",
     company: "Darwinbox India",
     description: `A product development intern at Darwinbox, collaborating on innovative software solutions, contributing to the enhancement and maintenance of key platforms and applications.`,
