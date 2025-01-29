@@ -13,8 +13,7 @@ import serving from '../assets/hobbies/serving.jpg';
 import festing from '../assets/hobbies/festing.jpg';
 
 export const HERO_CONTENT = `As a passionate Web Developer with a strong foundation in React.js, Node.js, and various other technologies, my objective is to leverage my skills and experience to build innovative and user-friendly web applications. With a proven track record in developing dynamic platforms, such as an anonymous confession platform and a Minesweeper-inspired game, I aim to contribute to impactful projects that push the boundaries of technology and enhance user experiences. I am eager to apply my knowledge in UI/UX design, game development, and backend integration to drive success in challenging development roles.`;
-export const ABOUT_TEXT = `I am a dedicated Web Developer with a robust background in both frontend and backend technologies. Holding a Bachelor of Technology in Computer Science and Engineering, I have cultivated a deep understanding of web development principles and practices. My expertise spans across various technologies including React.js, Node.js, and MongoDB, which I have applied in building dynamic and responsive web applications. I am passionate about leveraging my skills in UI/UX design, game development, and backend integration to develop innovative solutions and drive the success of web development projects. My commitment to continuous learning and adaptability ensures that I stay current with industry trends and best practices.`;
-
+export const ABOUT_TEXT = `I am a dedicated and passionate Web Developer with a Bachelor of Technology in Computer Science and Engineering, with a strong focus on both frontend and backend development. My expertise spans across a variety of cutting-edge technologies including the MERN & MEAN stacks, and PHP Laravel, which I have applied in building scalable, efficient, and dynamic web applications. Currently, I am expanding my horizons as a Product Development Intern at Darwinbox, where I am gaining hands-on experience working with AWS cloud services and PHP Yii framework. In addition to my technical skills, I have a solid foundation in UI/UX design, game development, and backend integration, all of which contribute to my ability to create user-friendly, responsive, and high-performing web applications. I am highly passionate about technology and innovation, and I constantly strive to improve my skills and stay up to date with the latest trends, tools, and best practices in web development.`;
 export const EXPERIENCES = [
   {
     year: "May 2023 - July 2023",
@@ -29,7 +28,14 @@ export const EXPERIENCES = [
     company: "University Summer Training",
     description: `Received comprehensive training in the full MERN stack during summer breaks in college. The instruction was provided by experts from Newton School and Geekster, covering in-depth development of full-stack web applications using MongoDB, Express.js, React, and Node.js. This hands-on experience facilitated a strong understanding of modern web technologies and development practices.`,
     technologies: ["Javascript", "React.js + Vite", "Node.js", "Express", "MongoDB"],
-  }
+  },
+  {
+    year: "Present",
+    role: "Product Development Intern",
+    company: "Darwinbox India",
+    description: `A product development intern at Darwinbox, collaborating on innovative software solutions, contributing to the enhancement and maintenance of key platforms and applications.`,
+    technologies: ["Javascript", "Angular", "Node.js", "AWS", "Express", "MongoDB", "PHP Yii"],
+  },
 ];
 
 export const EDUCATION = [
@@ -37,7 +43,7 @@ export const EDUCATION = [
     year: "2021 - 2025",
     type: "B.Tech - CSE",
     institution: "Lovely Professional University | Phagwara, Punjab",
-    description: "8.14", 
+    description: "8.18", 
   },
   {
     year: "2020 - 2021",

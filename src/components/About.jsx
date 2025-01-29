@@ -14,25 +14,25 @@ const About = () => {
           initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className="w-full lg:w-1/2 lg:p-8"
+          className="w-full lg:w-1/2 lg:p-8 flex justify-center"
         >
-          <div className="flex items-center justify-center">
-            <img className="rounded-2xl w-full max-w-sm" src={aboutImg} alt="About" />
-          </div>
+          <img 
+            className="rounded-2xl w-full max-w-sm lg:max-w-md mt-[-30px]" 
+            src={aboutImg} 
+            alt="About" 
+          />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
-          className='w-full lg:w-1/2'
+          className='w-full lg:w-1/2 flex justify-center lg:justify-start'
         >
-          <div className="flex justify-center lg:justify-start">
-            <p className='my-2 max-w-xl py-6'>{ABOUT_TEXT}</p>
-          </div>
+          <p className='my-2 max-w-xl py-6'>{ABOUT_TEXT}</p>
         </motion.div>
       </div>
     </div>
-  )
+  );
 };
 
 export default About;

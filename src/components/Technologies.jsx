@@ -1,8 +1,8 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { FaNodeJs, FaDocker, FaFigma } from "react-icons/fa"; 
+import { FaNodeJs, FaFigma, FaPhp, FaGitAlt } from "react-icons/fa"; 
 import { DiMongodb, DiPostgresql } from "react-icons/di";
 import { AiOutlineCode } from "react-icons/ai";
-import { SiMui } from "react-icons/si"; 
+import { SiMui, SiLaravel, SiAngular } from "react-icons/si"; 
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -44,141 +44,37 @@ const Technologies = () => {
         Technologies & Frameworks
       </motion.h1>
       <div className="flex flex-wrap items-center justify-center gap-4">
-        <motion.div
-          variants={iconVariants(2.5)}
-          animate="animate"
-          initial="initial"
-          className="relative flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4 group"
-        >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
+        {[ 
+          { icon: <SiAngular className="text-7xl text-red-600" />, name: "Angular", color: "text-red-600", duration: 4 },
+          { icon: <RiReactjsLine className="text-7xl text-cyan-400" />, name: "React", color: "text-cyan-400", duration: 2.5 },
+          { icon: <FaPhp className="text-7xl text-indigo-600" />, name: "PHP", color: "text-indigo-600", duration: 3 },
+          { icon: <FaNodeJs className="text-7xl text-green-600" />, name: "Node.js", color: "text-green-600", duration: 3 },
+          { icon: <AiOutlineCode className="text-7xl text-gray-600" />, name: "Express", color: "text-gray-600", duration: 5 },
+          { icon: <DiMongodb className="text-7xl text-green-700" />, name: "MongoDB", color: "text-green-700", duration: 2 },
+          { icon: <DiPostgresql className="text-7xl text-blue-700" />, name: "PostgreSQL", color: "text-blue-700", duration: 6 },
+          { icon: <FaFigma className="text-7xl text-purple-500" />, name: "Figma", color: "text-purple-500", duration: 3.5 },
+          { icon: <SiMui className="text-7xl text-blue-600" />, name: "MUI", color: "text-blue-600", duration: 2 },
+          { icon: <SiLaravel className="text-7xl text-red-500" />, name: "Laravel", color: "text-red-500", duration: 3.5 },
+          { icon: <FaGitAlt className="text-7xl text-orange-600" />, name: "Git", color: "text-orange-600", duration: 2.5 }
+        ].map(({ icon, name, color, duration }, index) => (
           <motion.div
-            variants={textVariants}
-            initial="hidden"
-            whileHover="visible"
-            className="absolute bottom-[-30px] text-center text-cyan-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            key={index}
+            variants={iconVariants(duration)}
+            animate="animate"
+            initial="initial"
+            className="relative flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4 group"
           >
-            React
+            {icon}
+            <motion.div
+              variants={textVariants}
+              initial="hidden"
+              whileHover="visible"
+              className={`absolute bottom-[-30px] text-center ${color} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
+            >
+              {name}
+            </motion.div>
           </motion.div>
-        </motion.div>
-
-        <motion.div
-          variants={iconVariants(3)}
-          animate="animate"
-          initial="initial"
-          className="relative flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4 group"
-        >
-          <FaNodeJs className="text-7xl text-green-600" />
-          <motion.div
-            variants={textVariants}
-            initial="hidden"
-            whileHover="visible"
-            className="absolute bottom-[-30px] text-center text-green-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-          >
-            Node.js
-          </motion.div>
-        </motion.div>
-
-        <motion.div
-          variants={iconVariants(5)}
-          animate="animate"
-          initial="initial"
-          className="relative flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4 group"
-        >
-          <AiOutlineCode className="text-7xl text-gray-600" />
-          <motion.div
-            variants={textVariants}
-            initial="hidden"
-            whileHover="visible"
-            className="absolute bottom-[-30px] text-center text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-          >
-            Express
-          </motion.div>
-        </motion.div>
-
-        <motion.div
-          variants={iconVariants(2)}
-          animate="animate"
-          initial="initial"
-          className="relative flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4 group"
-        >
-          <DiMongodb className="text-7xl text-green-700" />
-          <motion.div
-            variants={textVariants}
-            initial="hidden"
-            whileHover="visible"
-            className="absolute bottom-[-30px] text-center text-green-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-          >
-            MongoDB
-          </motion.div>
-        </motion.div>
-
-        <motion.div
-          variants={iconVariants(6)}
-          animate="animate"
-          initial="initial"
-          className="relative flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4 group"
-        >
-          <DiPostgresql className="text-7xl text-blue-700" />
-          <motion.div
-            variants={textVariants}
-            initial="hidden"
-            whileHover="visible"
-            className="absolute bottom-[-30px] text-center text-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-          >
-            PostgreSQL
-          </motion.div>
-        </motion.div>
-
-        <motion.div
-          variants={iconVariants(4)}
-          animate="animate"
-          initial="initial"
-          className="relative flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4 group"
-        >
-          <FaDocker className="text-7xl text-cyan-500" />
-          <motion.div
-            variants={textVariants}
-            initial="hidden"
-            whileHover="visible"
-            className="absolute bottom-[-30px] text-center text-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-          >
-            Docker
-          </motion.div>
-        </motion.div>
-
-        <motion.div
-          variants={iconVariants(3.5)}
-          animate="animate"
-          initial="initial"
-          className="relative flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4 group"
-        >
-          <FaFigma className="text-7xl text-purple-500" />
-          <motion.div
-            variants={textVariants}
-            initial="hidden"
-            whileHover="visible"
-            className="absolute bottom-[-30px] text-center text-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-          >
-            Figma
-          </motion.div>
-        </motion.div>
-
-        <motion.div
-          variants={iconVariants(2)}
-          animate="animate"
-          initial="initial"
-          className="relative flex flex-col items-center rounded-2xl border-4 border-neutral-800 p-4 group"
-        >
-          <SiMui className="text-7xl text-blue-600" />
-          <motion.div
-            variants={textVariants}
-            initial="hidden"
-            whileHover="visible"
-            className="absolute bottom-[-30px] text-center text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-          >
-            MUI
-          </motion.div>
-        </motion.div>
+        ))}
       </div>
     </div>
   );

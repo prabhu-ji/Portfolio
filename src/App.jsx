@@ -11,7 +11,6 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 export default function App() {
-  // Initialize dark mode as true by default
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   const toggleTheme = () => {
