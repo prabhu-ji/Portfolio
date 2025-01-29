@@ -112,6 +112,7 @@ export const HOBBIES = [
   { image: blogging, title: 'Blogging' },
   { image: serving, title: 'Serving' },
   { image: festing, title: 'Festing' },
+  { image: festing, title: '' },
 ];
 
 export const CONTACT = {
