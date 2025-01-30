@@ -21,7 +21,7 @@ const Navbar = ({ toggleTheme, isDarkMode }) => {
         <a href="https://github.com/prabhu-ji" target="_blank" rel="noopener noreferrer">
           <FaGithub className="hover:text-cyan-500 transition" />
         </a>
-        <a href="https://www.instagram.com/prabhu.ji_/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/prabhulogs/" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="hover:text-cyan-500 transition" />
         </a>
         <a href="mailto:prabhuji2910@gmail.com" target="_blank" rel="noopener noreferrer">
